@@ -10,20 +10,28 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	
 }
 
 body {
-	background-color: var(--primary-blue);
+	
 	color: var(--white);
+	background-image:url(acsess-bg.jpeg)  ;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
 }
 
 /* Header Styles */
 .header {
-	min-height: 100vh;
-	background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)),
-		url('https://source.unsplash.com/random/1920x1080?technology');
+	
+	
+		
 	background-size: cover;
-	background-position: center;
+	background-position:center ;
+	background-attachment: fixed;
 }
 
 .navbar {
@@ -32,7 +40,7 @@ body {
 	padding: 1.5rem 5%;
 	position: fixed;
 	width: 100%;
-	background: rgba(10, 25, 47, 0.95);
+	background: rgba(20, 53, 104, 0.95);
 	z-index: 1000;
 }
 
@@ -119,7 +127,9 @@ body {
 	margin-bottom: 1rem;
 	opacity: 0;
 	animation: slideUp 1s forwards;
+	color: var(--primary-blue);
 }
+
 
 .hero-subtitle {
 	font-size: 1.5rem;
@@ -137,14 +147,17 @@ body {
 	border-radius: 5px;
 	font-size: 1.1rem;
 	cursor: pointer;
-	transition: transform 0.3s;
+	transition: all 0.3s;
 	opacity: 0;
 	animation: fadeIn 1s 0.6s forwards;
 }
 
 .cta-btn:hover {
 	transform: translateY(-3px);
+	background-color: var(--primary-blue);
+	color: var(--accent-blue);
 }
+
 
 .join-us {
 	padding: 1rem 1rem;
@@ -155,13 +168,16 @@ body {
 	border-radius: 5px;
 	font-size: 1.1rem;
 	cursor: pointer;
-	transition: transform 0.3s;
+	transition: all 0.3s;
 	opacity: 0;
 	animation: fadeIn 1s 0.6s forwards;
+	
 }
 
 .join-us:hover {
 	transform: translateY(-3px);
+	background-color: var(--primary-blue);
+	color: var(--accent-blue);
 }
 
 /* Notifications Section */
@@ -176,16 +192,20 @@ body {
 	margin-top: 2rem;
 }
 
+
 .notification-card {
 	background: var(--secondary-blue);
 	padding: 2rem;
 	border-radius: 10px;
 	position: relative;
-	transition: transform 0.3s;
+	transition: all 0.15s;
 }
 
 .notification-card:hover {
-	transform: translateY(-5px);
+	transform: translateY(5px);
+	box-shadow: #172a45;
+	background-color:var(--accent-blue) ;
+	color: var(--primary-blue);
 }
 
 .alert-badge {
@@ -249,6 +269,11 @@ body {
 	background-color: var(--secondary-blue);
 	color: white;
 }
+.card:hover{
+		background-color: var(--accent-blue);
+		transform: translateY(2px);
+		color: var(--secondary-blue);
+	}
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -325,6 +350,9 @@ body {
 	background-color: var(--secondary-blue);
 	padding: 10px;
 	border-radius: 20px;
+}
+.about-text:hover{
+	box-shadow: 3px 3px rgba(0, 0, 26, 0.18);
 }
 
 .footer {
@@ -439,5 +467,7 @@ body {
 		padding: 1rem;
 		margin: auto;
 		margin-top: 1rem;
+		transition: all 0.15s;
 	}
+	
 }
