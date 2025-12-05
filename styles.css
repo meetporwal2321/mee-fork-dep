@@ -16,7 +16,7 @@
 body {
 	
 	color: var(--white);
-	background-image:url(assets/wallpapersden.com_k-thor-minimalism_5120x2880.jpg)  ;
+	background-image:url(assets/home\ bg.avif)  ;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -184,6 +184,7 @@ body {
 .notifications {
 	padding: 5rem 5%;
 }
+
 
 .notification-container {
 	display: grid;
@@ -376,6 +377,9 @@ body {
 
 .footer .social-icons a:hover {
 	color: var(--accent-blue);
+	text-shadow: 0 0 10px cyan,
+               0 0 20px cyan,
+               0 0 30px cyan;
 }
 
 /* Animations */
